@@ -1,8 +1,13 @@
 
 
+<<<<<<< HEAD
 Instruções para Rafael
 
     Escrever o materiais e métodos...
     
 
+=======
+Instruções para todos...
+texto a fazer vamos todos aqui 
+>>>>>>> 778bebcfabf1e099c9b6e096f83935df9fea6ec0
 Segue as novas instruções
