@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        button {
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a54e1;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <section class="dados-pessoais">
+            <h2>Dados Pessoais:</h2>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div class="form-group">
+            <div class="form-group">
+                <label for="gestante">Gestante:</label>
+                <select id="gestante" name="gestante" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div class="form-group">
+            <label for="raça">Raça/cor:</label>
+            <select id="raça" name="raça" required>
+                <option value="branco">Branco</option>
+                <option value="pardo">Pardo</option>
+                <option value="negro">Negro</option>
+                <option value="indigena">Indigena</option>
+                <option value="amarelo">Amarelo</option>
+            </select>
+            <div class="form-group">
+                <label for="escolaridade">Escolaridade:</label>
+            <select id="escolaridade" name="escolaridade" required>
+                <option value="fundamental">Fundamental</option>
+                <option value="ensino_medio">Ensino Médio</option>
+                <option value="superior_incomp">Superior Incompleto</option>
+                <option value="superior_comp">Superior Completo</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="nome_mae">Nome da Mãe:</label>
+                <input type="text" id="nome_mae" name="nome_mae" required>
+            </div>
+        </section>
+
+        <section class="dados-residenciais">
+            <h2>Dados Residenciais:</h2>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+            <select id="cidade" name="cidade" required>
+                <option value="dracena">Dracena</option>
+                <option value="pirapozinho">Pirapozinho</option>
+                <option value="presidente_prudente">Presidente Prudente</option>
+                <option value="presidente_venceslau">Presidente Venceslau</option>
+             </select>
+            </div>
+
+            <div class="form-group">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+           
+        </section>
+
+        <section class="sintomas">
+            <h2>Sintomas:</h2>
+            <label for="febre">Febre: </label>
+            <select id="febre" name="febre" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="artralgia">Artralgia (dores nas articulações): </label>
+            <select id="artralgia" name="artralgia" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="cefaleia">Cefaleia (dor de cabeça): </label>
+            <select id="cefaleia" name="cefaleia" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="cefaleia">Cefaleia (dor de cabeça): </label>
+                <select id="cefaleia" name="cefaleia" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="mialgia">Mialgia (dor muscular): </label>
+            <select id="mialgia" name="mialgia" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="exantema">Exantema (Erupções cutâneas avermelhadas): </label>
+            <select id="exantema" name="exantema" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+
+            <label for="prurido">Prurido (coceira): </label>
+            <select id="prurido" name="prurido" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="conjuntivite">Conjuntivite: </label>
+            <select id="conjuntivite" name="conjuntivite" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="dor_olhos"> Dor nos olhos: </label>
+            <select id="dor_olhos" name="dor_olhos" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>       
+        </section>
+
+        <br/> <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html>
