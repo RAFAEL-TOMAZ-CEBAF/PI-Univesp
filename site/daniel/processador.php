@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conjuntivite = $_POST['conjuntivite'] ?? '';
     $dor_olhos = $_POST['dor_olhos'] ?? '';
 
-    // Prepara a instrução SQL para inserção de dados
+    // inserção de dados
     $sql = "INSERT INTO pacientes (nome_completo, data_nascimento, sexo, gestante, raca_cor, escolaridade, nome_mae, cidade, logradouro, numero, bairro, febre, artralgia, cefaleia, mialgia, exantema, prurido, conjuntivite, dor_olhos)
             VALUES ('$nome_completo', '$data_nascimento', '$sexo', '$gestante', '$raca_cor', '$escolaridade', '$nome_mae', '$cidade', '$logradouro', $numero, '$bairro', '$febre', '$artralgia', '$cefaleia', '$mialgia', '$exantema', '$prurido', '$conjuntivite', '$dor_olhos')";
 
