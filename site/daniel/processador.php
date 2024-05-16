@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "";
     $username = "";
     $password = "";
-    $dbname = "";
+    $dbname = "dados_pacientes";
 
     // Cria uma conexão com o banco de dados
     $conn = new mysqli($servername, $username, $password, $dbname);
