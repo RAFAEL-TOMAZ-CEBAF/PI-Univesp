@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!--Tag de informação - então ela abre e não precisa se fechar-->
+<html lang="pt-br"> <!--Tag de conteudo - ela abre após o DOCTYPE  e fecha depois de todo conteudo posto no index--> <!--lang= linguagem portugues-Brasil-->
+
+                                          <!--Head é a cabeça nela não é passado nada para página-->
+<head>
+    <meta charset="UTF-8"> <!--Tag de informação - ele tem todos caracteres utilizado - e concerta os Ç e etc. -->
+    <meta name="viewport" content="width=device-width"> <!--Mexer com viewport= quantidade de pixel que tem na tela -- content="largura com largura do dispositivo" -->
+    <title>Barbearia Alura</title> <!--Tag de conteudo - titulo da página e ela não aparece na tela -->
+    <link rel="stylesheet" href="./reset.css/reset.css">  <!--Resetar o CSS - Primeiro coloca o reset e depois o CSS se não ele limpa ele tb-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Lincagem de fontes, mas para isso preciso colocar no meu CSS tambem-->
+
+</head>
+
+                                                                <!--Body é o corpo - tudo que tiver nela aparecerá na tela-->
+<body> 
+    <header> <!--cabeçalho da página e é dentro do conteudo-->
+        <div class="caixa">
+            <h1> <!--Conteudo principal é a imagem, então por isso se usa h1 para da enfase a img-->
+                <img src="./imagens/logo.png"  alt="Logo da Barbearia Alura" draggable="false"> <!--draggable="false" - siginifica não deixar a imagem ser arrastável-->
+            </h1>
+
+            <nav>
+                <ul> <!--Lista não ordenada - Lista desordenada-->
+                    <li><a href="index.html">Informativo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+
+    <img  class="banner" src="./banner/banner.jpg" alt="Logo Banner" draggable="false"> <!--draggable="false" - siginifica não deixar a imagem ser arrastável-->
+    
+    <main>
+        <section class="principal"> <!--SECTION por conta tem titulo e conteudo então eh SECTION-->
+            <h2 class="titulo-principal"> O objetivo principal no combate à dengue é reduzir a incidência da doença e, consequentemente, o sofrimento humano causado por ela. </h2>
+
+     
+
+            <p> <strong>A Prefeitura de Pirapozinho-SP</strong>  
+                 dedica este site para mapear, conscientizar e prevenir a propagação da doença e apontar as áreas afetadas pela dengue. Um canal para os usuários entrarem em contato com as autoridades de saúde locais para relatar áreas com altos índices de infestação de mosquitos ou para solicitar intervenções de controle de vetores.</p>
+
+            
+            <p class="missao"><em> Nossa missão é: <strong>"Garantir que as pessoas afetadas tenham acesso a cuidados médicos adequados, incluindo diagnóstico precoce, tratamento adequado e apoio ao paciente."</strong> .</em></p> <!--em = italico deixa a palavra deitadinha-->
+            
+
+        </section> 
+
+         
+                
+        <section class="mapa">
+            <h3 class="titulo-principal">Localização da Prefeitura de Pirapozinho-SP</h3>
+            <p>Nosso Prefeitura está localizado no coração da cidade.</p>
+
+            <div class="mapa-conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11063.45829321263!2d-51.49599238456099!3d-22.27850824576859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94938de43451fd37%3A0x5f3c68084ca4d01c!2sPrefeitura%20Municipal%20de%20Pirapozinho!5e0!3m2!1spt-BR!2sbr!4v1708044548211!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="beneficios">
+                <h3 class="titulo-principal">Previna-se e Combata a Dengue!</h3>
+            <div class="conteudo-beneficios">
+                <ul class="lista-beneficios"> <!--Lista não ordenada -lista desordenada-->
+                    <li class="itens"> Algumas Informações para Eliminação de Criadouros:</li> <!--Lista dos itens-->
+                    <li class="itens"> * Remova recipientes que possam acumular água parada, como pneus velhos, vasos de plantas, garrafas vazias e latas.</li> <!--posso tambem colocar ✂ no css como .itens:before{ content:✂;} -->
+                    <li class="itens"> * Mantenha calhas limpas e desentupidas.</li>
+                    <li class="itens"> * Troque a água de vasos de plantas e bebedouros de animais regularmente.</li>
+                    <li class="itens"> * Armazene garrafas e recipientes de cabeça para baixo.</li>
+                    <li class="itens"> * Descarte corretamente pneus velhos e outros objetos que possam acumular água.</li>
+                </ul>
+                    <!--O UL e IMG tem que ficar grudado por conta -->
+            </div>
+                
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/EssKBRvRrkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </section>
+    </main>
+
+
+    <footer>
+        <img src="./imagens/logo-branco.png" alt="Logo da Barbearia Alura"  draggable="false">
+        <p>  2024 © Todos os direitos reservados. Webline Sistemas ®</p>
+    </footer>
+
+   
+
+</body>
+</html>
