@@ -2,9 +2,9 @@
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configurações de conexão ao banco de dados
-    $servername = "";
-    $username = "";
-    $password = "";
+    $servername = "heroku_0227988c715370b";
+    $username = "bb9a81b19dca7f";
+    $password = "8741434b";
     $dbname = "dados_pacientes";
 
     // Cria uma conexão com o banco de dados

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        button {
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a54e1;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <section class="dados-pessoais">
+            <h2>Dados Pessoais:</h2>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gestante">Gestante:</label>
+                <select id="gestante" name="gestante" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="raca_cor">Raça/Cor:</label>
+                <input type="text" id="raca_cor" name="raca_cor" required>
+            </div>
+            <div class="form-group">
+                <label for="escolaridade">Escolaridade:</label>
+                <input type="text" id="escolaridade" name="escolaridade" required>
+            </div>
+            <div class="form-group">
+                <label for="nome_mae">Nome da Mãe:</label>
+                <input type="text" id="nome_mae" name="nome_mae" required>
+            </div>
+        </section>
+
+        <section class="dados-residenciais">
+            <h2>Dados Residenciais:</h2>
+            <div class="form-group">
+                <label for="municipio">Município de Residência:</label>
+                <input type="text" id="municipio" name="municipio" required>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF:</label>
+                <input type="text" id="uf" name="uf" required>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}">
+            </div>
+            <div class="form-group">
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+            </div>
+            <div class="form-group">
+                <label for="fone_fixo">Telefone Fixo:</label>
+                <input type="text" id="fone_fixo" name="fone_fixo">
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" name="celular" required>
+            </div>
+        </section>
+
+        <section class="sintomas">
+            <h2>Sintomas:</h2>
+            <table>
+                <tr>
+                    <th>Sintoma</th>
+                    <th>Sim</th>
+                    <th>Não</th>
+                </tr>
+                <tr>
+                    <td>Febre</td>
+                    <td><input type="radio" name="febre" value="sim"></td>
+                    <td><input type="radio" name="febre" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Artralgia (dores nas articulações)</td>
+                    <td><input type="radio" name="artralgia" value="sim"></td>
+                    <td><input type="radio" name="artralgia" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Cefaleia (dor de cabeça)</td>
+                    <td><input type="radio" name="cefaleia" value="sim"></td>
+                    <td><input type="radio" name="cefaleia" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Mialgia (dor muscular)</td>
+                    <td><input type="radio" name="mialgia" value="sim"></td>
+                    <td><input type="radio" name="mialgia" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Exantema (Erupções cutâneas avermelhadas)</td>
+                    <td><input type="radio" name="exantema" value="sim"></td>
+                    <td><input type="radio" name="exantema" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Prurido (coceira)</td>
+                    <td><input type="radio" name="prurido" value="sim"></td>
+                    <td><input type="radio" name="prurido" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Conjuntivite</td>
+                    <td><input type="radio" name="conjuntivite" value="sim"></td>
+                    <td><input type="radio" name="conjuntivite" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Dor retro-orbitaria</td>
+                    <td><input type="radio" name="dor_retro_orbitaria" value="sim"></td>
+                    <td><input type="radio" name="dor_retro_orbitaria" value="nao"></td>
+                </tr>
+                <tr>
+                    <td>Outros</td>
+                    <td colspan="2"><input type="text" name="outros_sintomas" placeholder="Descreva se necessário"></td>
+                </tr>
+                            </table>
+        </section>
+
+        <button type="submit">Enviar Formulário</button>
+    </form>
+</body>
+</html>

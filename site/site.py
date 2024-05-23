@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def dengue():
-    return render_template("dengue.html")
+    return render_template("index.html")
 
 @app.route("/formulario/")
 def formulario():
